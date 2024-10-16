@@ -23,7 +23,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="Initial test - HTTP Cookie Manager- Delvis" enabled="true">
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="Initial test - HTTP Cookie Manager- Delvis">
           <collectionProp name="CookieManager.cookies"/>
           <boolProp name="CookieManager.clearEachIteration">false</boolProp>
           <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
@@ -89,7 +89,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Referer" elementType="Header">
                 <stringProp name="Header.name">Referer</stringProp>
@@ -126,6 +126,16 @@
             <stringProp name="ConstantTimer.delay">5000</stringProp>
             <stringProp name="TestPlan.comments">5s</stringProp>
           </ConstantTimer>
+          <hashTree/>
+          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor">
+            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+            <stringProp name="RegexExtractor.refname">sdfsd</stringProp>
+            <stringProp name="RegexExtractor.regex">dsaffddsf</stringProp>
+            <stringProp name="RegexExtractor.template">df</stringProp>
+            <stringProp name="RegexExtractor.default"></stringProp>
+            <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
+            <stringProp name="RegexExtractor.match_number"></stringProp>
+          </RegexExtractor>
           <hashTree/>
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ClickOnSignIn_/onlineshop/login-14" enabled="false">
@@ -420,7 +430,7 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer">
             <stringProp name="ConstantTimer.delay">5000</stringProp>
             <stringProp name="TestPlan.comments">5s</stringProp>
           </ConstantTimer>
@@ -512,7 +522,7 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer">
             <stringProp name="ConstantTimer.delay">6000</stringProp>
             <stringProp name="RandomTimer.range">15000</stringProp>
           </UniformRandomTimer>
@@ -598,7 +608,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="Referer" elementType="Header">
                 <stringProp name="Header.name">Referer</stringProp>
